@@ -452,8 +452,8 @@ parentViewController:(UIViewController*)parentViewController
 
     if ([captureSession canSetSessionPreset:AVCaptureSessionPresetHigh]) {
       captureSession.sessionPreset = AVCaptureSessionPresetHigh;
-    } else if ([captureSession canSetSessionPreset:AVCaptureSessionPresetMedium]) {
-      captureSession.sessionPreset = AVCaptureSessionPresetMedium;
+    } else if ([captureSession canSetSessionPreset:AVCaptureSessionPresetHigh]) {
+      captureSession.sessionPreset = AVCaptureSessionPresetHigh;
     } else {
       return @"unable to preset high nor medium quality video capture";
     }
